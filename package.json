@@ -38,7 +38,7 @@
     "nodemon": "^1.4.1",
     "qunit-extras": "^1.4.2",
     "qunitjs": "^1.18.0",
-    "rollup": "^0.14.1"
+    "rollup": "^2.79.2"
   },
   "dependencies": {
     "ember-cli-babel": "^6.8.2"

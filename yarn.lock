@@ -6,10 +6,6 @@ abbrev@1, abbrev@1.0.x:
   version "1.0.9"
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
 
-acorn@^1.1.0:
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/acorn/-/acorn-1.2.2.tgz#c8ce27de0acc76d896d2b1fad3df588d9e82f014"
-
 ajv@^4.9.1:
   version "4.11.6"
   resolved "https://registry.npmjs.org/ajv/-/ajv-4.11.6.tgz#947e93049790942b2a2d60a8289b28924d39f987"
@@ -1112,10 +1108,6 @@ entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-es6-promise@^2.0.0:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/es6-promise/-/es6-promise-2.3.0.tgz#96edb9f2fdb01995822b263dd8aadab6748181bc"
-
 es6-promise@^3.0.2:
   version "3.3.1"
   resolved "https://registry.npmjs.org/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
@@ -1299,6 +1291,10 @@ fsevents@^1.0.0:
     nan "^2.3.0"
     node-pre-gyp "^0.6.29"
 
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
+
 fstream-ignore@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/fstream-ignore/-/fstream-ignore-1.0.5.tgz#9c31dae34767018fe1d249b24dada67d092da105"
@@ -1396,12 +1392,6 @@ got@^3.2.0:
     prepend-http "^1.0.0"
     read-all-stream "^3.0.0"
     timed-out "^2.0.0"
-
-graceful-fs@^3.0.4:
-  version "3.0.11"
-  resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-3.0.11.tgz#7613c778a1afea62f25c630a086d7f3acbbdd818"
-  dependencies:
-    natives "^1.1.0"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
@@ -1869,12 +1859,6 @@ lowercase-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
 
-magic-string@^0.6.4:
-  version "0.6.6"
-  resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.6.6.tgz#35b5788604ec27f1774132deb3806d2369f8c36c"
-  dependencies:
-    vlq "^0.2.0"
-
 map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
@@ -1939,7 +1923,7 @@ minimist@0.0.8, minimist@~0.0.1:
   version "0.0.8"
   resolved "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@^1.1.1, minimist@^1.2.0:
+minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
@@ -1964,10 +1948,6 @@ ms@2.0.0:
 nan@^2.3.0:
   version "2.6.1"
   resolved "https://registry.npmjs.org/nan/-/nan-2.6.1.tgz#8c84f7b14c96b89f57fbc838012180ec8ca39a01"
-
-natives@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/natives/-/natives-1.1.0.tgz#e9ff841418a6b2ec7a495e939984f78f163e6e31"
 
 nested-error-stacks@^1.0.0:
   version "1.0.2"
@@ -2421,22 +2401,17 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.8, rimraf@^2.3.4, rimraf@^2.4.3, rimraf@^2.5.1, rimraf@^2.5.3, rimraf@^2.5.4, rimraf@^2.6.1:
+rimraf@2, rimraf@^2.3.4, rimraf@^2.4.3, rimraf@^2.5.1, rimraf@^2.5.3, rimraf@^2.5.4, rimraf@^2.6.1:
   version "2.6.1"
   resolved "https://registry.npmjs.org/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
   dependencies:
     glob "^7.0.5"
 
-rollup@^0.14.1:
-  version "0.14.1"
-  resolved "https://registry.npmjs.org/rollup/-/rollup-0.14.1.tgz#48d7fcfd4f234cf6e929b9261b06394d7b5e5720"
-  dependencies:
-    acorn "^1.1.0"
-    chalk "^1.0.0"
-    magic-string "^0.6.4"
-    minimist "^1.1.1"
-    sander "^0.3.3"
-    source-map-support "^0.3.1"
+rollup@^2.79.2:
+  version "2.79.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.79.2.tgz#f150e4a5db4b121a21a747d762f701e5e9f49090"
+  optionalDependencies:
+    fsevents "~2.3.2"
 
 rsvp@^3.0.14, rsvp@^3.0.18:
   version "3.5.0"
@@ -2453,15 +2428,6 @@ rsvp@~3.2.1:
 safe-buffer@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
-
-sander@^0.3.3:
-  version "0.3.8"
-  resolved "https://registry.npmjs.org/sander/-/sander-0.3.8.tgz#7297fde7396192fe9ddc81ec6558a3bcd35d24d5"
-  dependencies:
-    es6-promise "^2.0.0"
-    graceful-fs "^3.0.4"
-    mkdirp "^0.5.0"
-    rimraf "^2.2.8"
 
 semver-diff@^2.0.0:
   version "2.1.0"
@@ -2509,23 +2475,11 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
-source-map-support@^0.3.1:
-  version "0.3.3"
-  resolved "https://registry.npmjs.org/source-map-support/-/source-map-support-0.3.3.tgz#34900977d5ba3f07c7757ee72e73bb1a9b53754f"
-  dependencies:
-    source-map "0.1.32"
-
 source-map-support@^0.4.15:
   version "0.4.18"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
   dependencies:
     source-map "^0.5.6"
-
-source-map@0.1.32:
-  version "0.1.32"
-  resolved "https://registry.npmjs.org/source-map/-/source-map-0.1.32.tgz#c8b6c167797ba4740a8ea33252162ff08591b266"
-  dependencies:
-    amdefine ">=0.0.4"
 
 source-map@^0.4.4:
   version "0.4.4"
@@ -2788,10 +2742,6 @@ verror@1.3.6:
   resolved "https://registry.npmjs.org/verror/-/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"
   dependencies:
     extsprintf "1.0.2"
-
-vlq@^0.2.0:
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/vlq/-/vlq-0.2.1.tgz#14439d711891e682535467f8587c5630e4222a6c"
 
 walk-sync@^0.2.7:
   version "0.2.7"
